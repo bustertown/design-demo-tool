@@ -1,25 +1,21 @@
 import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { toGlclampf } from '../core/utils/toGlclampf'
-import { drawScene } from '../core/drawScene'
-import { createProgramInfo } from '../core/createProgram'
+import { toGlclampf } from '../core/webgl/utils/toGlclampf'
+import { drawScene } from '../core/webgl/drawScene'
+import { createProgramInfo } from '../core/webgl/createProgram'
 import {
   fragmentShaderSource,
   vertexShaderSource,
-} from '../core/shaders/scripts'
+} from '../core/webgl/shaders/scripts'
 import { RgbColorPicker, Slider } from '../components'
-
-const CANVAS = {
-  height: 380,
-  width: 640,
-}
+import { CANVAS } from '../core/constants'
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  > h1 {
+  > h2 {
     margin: 8px;
   }
 `
@@ -58,7 +54,7 @@ const ButtonContainer = styled.div`
   gap: 10px;
 `
 
-export const WebGpl: React.FC = () => {
+export const WebGl: React.FC = () => {
   const [rgba, setRgba] = useState<[number, number, number, number]>([
     0, 0, 0, 0,
   ])
@@ -148,7 +144,7 @@ export const WebGpl: React.FC = () => {
 
   return (
     <Container>
-      <h1>Design Demo Tool</h1>
+      <h2>WebGL</h2>
       <Form>
         <InputContainer>
           <h3>Shape Dimensions</h3>

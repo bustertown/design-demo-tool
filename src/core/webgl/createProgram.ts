@@ -1,4 +1,4 @@
-import { ProgramInfo } from '../web-gl'
+import { ProgramInfo } from '../../web-gl'
 import { initShaderProgram } from './initShaderProgram'
 
 export function createProgramInfo(

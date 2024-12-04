@@ -1,4 +1,4 @@
-import { ProgramInfo } from '../web-gl'
+import { ProgramInfo } from '../../web-gl'
 
 type ShapeInfo = {
   translation: [number, number]
