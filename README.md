@@ -2,6 +2,15 @@
 
 Demo web app for how to use WebGL and Pixi.JS.
 
+## How to build
+
+After cloning the project, install dependencies and run the dev server
+
+```bash
+npm i
+npm run dev
+```
+
 ## WebGL(2)
 
 WebGL is web implementation of OpenGL that is able to access the GPU of a device for fast rendering. It is pretty simplistic and the features are:
