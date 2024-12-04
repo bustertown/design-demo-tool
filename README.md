@@ -24,6 +24,16 @@ WebGL is web implementation of OpenGL that is able to access the GPU of a device
 
 Pixi.JS is built on top of WebGL, WebGPU, and canvas to provide a fast experience. It wraps up a lot of the heavy lifting of creating shader programs and other user functionality.
 
+### Pros
+
+- A lot of the lower level logic is wrapped up in convenience components
+- Gives a lot of "free" functionality
+
+### Cons
+
+- Not sure of the difficulty to extra data to save files and such
+- There are some odd issues with typings that seem to be off
+
 ## Other Options
 
 - WebGPU/[wgpu](https://github.com/gfx-rs/wgpu?tab=readme-ov-file): It is based on the WebGPU standard and intended to run over WebGPL. Built in rust, it runs on WASM
